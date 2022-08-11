@@ -50,7 +50,7 @@ body{
 .img-bg-pattern{
     position: absolute;
     background-image: url('./images/bg-pattern-mobile.svg');
-    height: 14rem;
+    height: 7rem;
     width: 15rem;
     display: inline-block;
     background-repeat: no-repeat;
@@ -69,11 +69,16 @@ body{
 .container-single-faq{
     border-bottom: 1px solid var(--lightGrayishBlue);
     display: flex;
+    flex-direction: column;
     min-width: 100%;
-    align-items: center
+    align-items: center;
+    cursor: pointer;
 }
 .questions{
     width: 100%;
+    color: var(--veryDarkGrayishBlue);
+    display: flex;
+    justify-content: space-between;
 }
 .icon-arrow{
     background-image: url('./images/icon-arrow-down.svg');
@@ -81,4 +86,7 @@ body{
     width: 10px;
     display: inline-block;
     background-repeat: no-repeat;
+}
+.answers{
+    color: var(--darkGrayishBlue);
 }
