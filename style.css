@@ -90,3 +90,6 @@ body{
 .answers{
     color: var(--darkGrayishBlue);
 }
+.icon-arrow-top{
+    transform: rotate(180deg);
+}
