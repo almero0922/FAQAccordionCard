@@ -23,6 +23,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 12px;
+    position: relative;
 }
 .inactive{
     display: none;
@@ -59,6 +60,7 @@ body{
 }
 .text-faq{
     margin-top: 130px;
+    text-align: center;
 }
 .container-faqs{
     display: grid;
@@ -80,6 +82,9 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.questions:hover{
+    color: var(--softRed);
+}
 .icon-arrow{
     background-image: url('./images/icon-arrow-down.svg');
     height: 10px;
@@ -92,4 +97,43 @@ body{
 }
 .icon-arrow-top{
     transform: rotate(180deg);
+}
+@media (min-width: 1000px){
+    .main-container{
+        width: 50rem;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+    .img-top{
+        background-image: url('./images/illustration-woman-online-desktop.svg');
+        width: 30rem;
+        height: 30rem;
+        top: 100px;
+        left: -70px;
+    }
+    .icon-box-desktop{
+        background-image: url('./images/illustration-box-desktop.svg');
+        width: 10rem;
+        height: 10rem;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        left: 788px;
+        top: 468px;
+    }
+    .img-bg-pattern{
+        background-image: url('./images/bg-pattern-desktop.svg');
+        background-size: cover;
+        width: 50rem;
+        height: 45rem;
+        top: -140px;
+        left: -400px;
+    }
+    .container-faq-questions{
+        margin-right: 54px;
+    }
+    .text-faq{
+        text-align: left;
+        font-size: 30px;
+    }
 }
